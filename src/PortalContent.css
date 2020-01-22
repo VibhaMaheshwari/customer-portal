@@ -1,0 +1,54 @@
+.portal-content {
+    display: flex;
+    flex-wrap: wrap;
+    background: #efefef;
+}
+
+input[name='navigation-header-input'] {
+   display: none;
+}
+
+.navigation-header-label {
+    width: 100%;
+    padding: 20px 30px;
+    background: #e5e5e5;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #7f7f7f;
+    transition: background 0.1s, color 0.1s;
+}
+
+.navigation-header-label:hover {
+    background: #d8d8d8;
+}
+
+.navigation-header-label:active {
+    background: #ccc;
+}
+
+.content {
+    display: none;
+    padding: 40px;
+    background: #fff;
+}
+
+input[name='navigation-header-input']:checked + .navigation-header-label {
+    background: #fff;
+    color: #000;
+}
+
+input[name='navigation-header-input']:checked + .navigation-header-label + .content {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navigation-header-label {
+        flex: 1;
+    }
+    .content {
+        order: 1;
+    }
+}
+

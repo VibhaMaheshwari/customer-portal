@@ -1,0 +1,14 @@
+.easter-egg-surprise{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.info-text{
+    max-width: 1440px;
+    margin: 0px auto;
+    margin-bottom: 1rem;
+}

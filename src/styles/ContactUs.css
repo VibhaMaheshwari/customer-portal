@@ -1,0 +1,14 @@
+
+@media (min-width: 768px) {
+    .contact-us-page{
+        display: flex;
+    }
+    .contact-details{
+        flex: 1;
+        padding: 120px;
+        border-right: 1px solid;
+    }
+    .form-details{
+        padding: 60px;
+    }
+}
